@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      "react-native-svgwheel-menu@1.2.4",
+      "/home/ayanwork/Ravi/ORS/aw-c-dashboard"
+    ]
+  ],
+  "_from": "react-native-svgwheel-menu",
+  "_id": "react-native-svgwheel-menu@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-neadXY5iRxk3cWOcheo2r42hJ6JH0pDLVoOkuyCuNlXgE6L3U94GnEoN4rlD+x+cbanTKzG7CPoORNWTA+WoTA==",
+  "_location": "/react-native-svgwheel-menu",
+  "_phantomChildren": {
+    "color-string": "1.5.3",
+    "lodash": "4.17.20",
+    "pegjs": "0.10.0"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-svgwheel-menu",
+    "name": "react-native-svgwheel-menu",
+    "escapedName": "react-native-svgwheel-menu",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-svgwheel-menu/-/react-native-svgwheel-menu-3.1.0.tgz",
+  "_shasum": "dad59196f5742c8d7e68d7ffd8e6ebc8527e07a5",
+  "_spec": "react-native-svgwheel-menu",
+  "_where": "D:\\MyProjects\\LoopCare",
+  "author": {
+    "name": "Ayanworks Technologies"
+  },
+  "bugs": {
+    "url": "https://github.com/ayanworkstech/react-native-svg-wheel-menu/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "d3": "^5.7.0",
+    "d3-shape": "^1.2.2",
+    "native-base": "^2.8.1",
+    "react-native-svg": "^8.0.8"
+  },
+  "deprecated": false,
+  "description": "React Native Svg Wheel",
+  "homepage": "https://github.com/ayanworkstech/react-native-svg-wheel-menu#readme",
+  "keywords": [
+    "React",
+    "Native",
+    "Svg",
+    "Wheel",
+    "Menu"
+  ],
+  "license": "ISC",
+  "main": "GenerateCanvas.js",
+  "name": "react-native-svgwheel-menu",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayanworkstech/react-native-svg-wheel-menu.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.1.0"
+}
