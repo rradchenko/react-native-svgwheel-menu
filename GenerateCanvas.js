@@ -15,8 +15,8 @@ import GeneratePath from './GeneratePath';
 import HoverPath from './hoverPath';
 import HoverText from './hoverText';
 
-const width = 400;
-const height = 400;
+const width = 320;
+const height = 320;
 
 const pieWidth = 150;
 
@@ -117,7 +117,6 @@ class GenerateCanvas extends Component {
       this.setState({ level2ChildAngles: newOne });
     }
   }
-  return this.props.clickEvent(data, name);
   }
 
   onSecondParentClick(data, name) {
@@ -270,7 +269,7 @@ class GenerateCanvas extends Component {
   }
 
   onParentClick(data, name, idx) {
-    var a = [];
+   /* var a = [];
     a = Object.assign(this.state.parentAngles)
     this.setState({ backup: a });
     this.setState({ nameOfChild: name, depth: 2});
@@ -303,9 +302,8 @@ class GenerateCanvas extends Component {
       else {
         this.setState({ childAngles: sectionAngles });
       }
-    }
-
-    return this.props.clickEvent(data, name); 
+    }*/
+    return this.props.onClickEvent(data, name); 
 
   }
 
@@ -416,7 +414,9 @@ class GenerateCanvas extends Component {
     this.iR= 30
     this.oR= 80
     this.path = d3.arc().outerRadius(this.oR).padAngle(0).innerRadius(this.iR);
-    return this.props.onClickEvent(data, name);
+    setTimeout(() => {
+      return this.props.onClickEvent(data, name); 
+    }, 300)
   }
 
   callAnytime(data) {
@@ -431,7 +431,7 @@ class GenerateCanvas extends Component {
   }
 
   eliminateIllusion(data, name, idx) {
-    var a= []
+   /* var a= []
     this.setState({ currentIndex: -1 });
 
     if(arguments.length === 0) {
@@ -440,19 +440,11 @@ class GenerateCanvas extends Component {
         this.setState({ nameOfChild: 'Home' });
     }
     else {
-      // var bool = this.callAnytime(data);
-      // a=Object.assign(this.state.hoverAngles) 
-      // this.setState({ childAngles: a, abortAnimation: false })
-      // if(bool) {
-      //   this.clickOnChildItem(data, name, idx);
-      // }
-      // else{
-      //   this.setState({ childAngles: []})
-      // }
       this.setState({ depth: 2 });
       this.clickOnChildItem(data, name, idx);
     }
-    return this.props.clickEvent(data, name);
+
+    return this.props.clickEvent(data, name); */
   }
 
   exitAlert(){
